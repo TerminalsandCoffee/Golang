@@ -1,0 +1,20 @@
+#we use slices instead of lists, and we declare the type of the slice using square brackets
+
+package main
+
+import "fmt"
+
+
+
+func main() {
+    // Create an empty slice of strings
+    services := []string{}
+
+    // Populate the slice using append
+    services = append(services, "S3")
+    services = append(services, "Lambda")
+    services = append(services, "EC2")
+    services = append(services, "DynamoDB")
+
+    fmt.Println(services) // Output: [S3 Lambda EC2 DynamoDB]
+}
